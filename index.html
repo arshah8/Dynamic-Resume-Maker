@@ -32,23 +32,81 @@
             <li><a href="https://pakwheelsclone.vercel.app" target="_blank">PakWheels Clone</a></li>
         </ul>
     </section>
+    <section id="links">
+        <h2><i class="fas fa-briefcase"></i> Github URL</h2>
+       
+        <ul>
+            <li><a href="https://siteanime-arshah8s-projects.vercel.app" target="_blank"> GitHub</a></li>
+            
+        </ul>
+    
+        <h2><i class="fas fa-briefcase"></i> Vercel URL</h2>
+       
+        <ul>
+            <li><a href="https://siteanime-arshah8s-projects.vercel.app" target="_blank">Vercel</a></li>
+            
+        </ul>
+    </section>
 
     <div class="resume">
         <h1>Do you want to make your own resume?</h1>
-   
+        <form id="resumeForm">
+            <h2>Enter Your Details:</h2>
 
-    <form id="resumeForm">
-        <h2>Enter Your Details:</h2>
-        <input type="text" placeholder="Name" name="name" value="Aarsh" required>
-        <input type="email" placeholder="Email" name="email" value="arshahdev08@gmail.com" required>
-        <textarea placeholder="Education" name="education" required>Currently pursuing a Bachelor of Science in Computer Science (BSCS).</textarea>
-        <textarea placeholder="Work Experience" name="workExperience" required>Internship at XYZ Company (June 2023 - August 2023): Assisted in web development projects.</textarea>
-        <textarea placeholder="Skills" name="skills" required>JavaScript, TypeScript, HTML, CSS, React, Node.js</textarea>
-        <button type="submit">Generate Resume</button>
-    </form>
-    <button id="shareButton">Share Resume</button>
-    <button id="downloadButton">Download as PDF</button>
-</div>
+            <label>
+              
+                Name
+            </label>
+            <input type="text" placeholder="Name" name="name" value="Aarsh" required>
 
+            <label>
+               
+                Email
+            </label>
+            <input type="email" placeholder="arshahdev08@gmail.com">
+
+            <label>
+                <input type="checkbox" checked class="toggle-checkbox" data-target="education">
+                <span class="checkmark"></span>
+                Education
+            </label>
+            <textarea placeholder="Education"></textarea>
+
+            <label>
+                <input type="checkbox" checked class="toggle-checkbox" data-target="skills">
+                <span class="checkmark"></span>
+                Skills
+            </label>
+            <textarea placeholder="Skills"></textarea>
+            
+            <label>
+                <input type="checkbox" checked class="toggle-checkbox" data-target="workExperience">
+                <span class="checkmark"></span>
+                Work Experience
+            </label>
+            <textarea placeholder="Work Experience" ></textarea>
+ 
+            <label>
+                <input type="checkbox" checked class="toggle-checkbox" data-target="githublink">
+                <span class="checkmark"></span>
+                Github Link :
+            </label>
+            <textarea placeholder="Your Github URL" ></textarea>
+
+            <label>
+                <input type="checkbox" checked class="toggle-checkbox" data-target="vercellink">
+                <span class="checkmark"></span>
+                Vercel Link :
+            </label>
+            <textarea placeholder="Your Vercel URL" ></textarea>
+
+            
+            <button type="submit">Generate Resume</button>
+        </form>
+        <button id="shareButton">Share Resume</button>
+        <button id="downloadButton">Download as PDF</button>
+    </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
