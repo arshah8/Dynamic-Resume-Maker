@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 id="resumeName">Aarsh</h1>
+        <p id="contactDetails">arshahdev08@gmail.com</p>
+        <img src="profile.jpg" alt="Profile Picture" id="profilePicture">
+    </header>
+
+    <section id="education">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <p id="educationContent">Currently pursuing a Bachelor of Science in Computer Science (BSCS).</p>
+    </section>
+
+    <section id="skills">
+        <h2><i class="fas fa-cogs"></i> Skills</h2>
+        <p id="skillsContent">TypeScript, C++, Tailwind CSS, Next.js</p>
+    </section>
+
+    <section id="work-experience">
+        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+        <p id="workExperienceContent">Made Personal Projects:</p>
+        <ul>
+            <li><a href="https://siteanime-arshah8s-projects.vercel.app" target="_blank">SiteAnime Project</a></li>
+            <li><a href="https://pakwheelsclone.vercel.app" target="_blank">PakWheels Clone</a></li>
+        </ul>
+    </section>
+
+    <div class="resume">
+        <h1>Do you want to make your own resume?</h1>
+   
+
+    <form id="resumeForm">
+        <h2>Enter Your Details:</h2>
+        <input type="text" placeholder="Name" name="name" value="Aarsh" required>
+        <input type="email" placeholder="Email" name="email" value="arshahdev08@gmail.com" required>
+        <textarea placeholder="Education" name="education" required>Currently pursuing a Bachelor of Science in Computer Science (BSCS).</textarea>
+        <textarea placeholder="Work Experience" name="workExperience" required>Internship at XYZ Company (June 2023 - August 2023): Assisted in web development projects.</textarea>
+        <textarea placeholder="Skills" name="skills" required>JavaScript, TypeScript, HTML, CSS, React, Node.js</textarea>
+        <button type="submit">Generate Resume</button>
+    </form>
+    <button id="shareButton">Share Resume</button>
+    <button id="downloadButton">Download as PDF</button>
+</div>
+
+</body>
+</html>
