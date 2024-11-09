@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./public",
+    "outDir": "./dist",
     "rootDir": "./src"
   },
   "include": [
@@ -16,9 +16,10 @@
     "node_modules"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --output public",
     "start": "tsc --watch",
     "dev": "nodemon dist/index.js"
+    
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.13.0",
