@@ -72,7 +72,3 @@ var ResumeFormToggler = /** @class */ (function () {
     };
     return ResumeFormToggler;
 }());
-document.addEventListener('DOMContentLoaded', function () {
-    var resumeFormToggler = new ResumeFormToggler();
-    resumeFormToggler.initFormSubmission();
-});

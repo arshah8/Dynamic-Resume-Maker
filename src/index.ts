@@ -1,5 +1,4 @@
 
-// used object oriented programming concepts
 interface ToggleableElement {
     checkbox: HTMLInputElement;
     input: HTMLInputElement | HTMLTextAreaElement;
@@ -101,8 +100,3 @@ class ResumeFormToggler {
 }
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    const resumeFormToggler = new ResumeFormToggler();
-    resumeFormToggler.initFormSubmission();
-});
