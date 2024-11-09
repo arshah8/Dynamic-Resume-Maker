@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
+    "outDir": "public",
     "rootDir": "./src"
   },
   "include": [
@@ -16,8 +16,8 @@
     "node_modules"
   ],
   "scripts": {
-    "build": "tsc --output public",
-    "start": "tsc --watch",
+   "build": "tsc && mkdir -p public && cp -r dist/* public/",
+    "start": "node dist/index.js",
     "dev": "nodemon dist/index.js"
     
   },
