@@ -68,7 +68,7 @@ class ResumeFormToggler {
         input.style.display = 'block';
         input.style.transition = 'all 0.3s ease-in-out';
         
-        // Use requestAnimationFrame for smoother animation
+      
         requestAnimationFrame(() => {
             input.style.opacity = '1';
             input.style.height = 'auto';
@@ -84,7 +84,7 @@ class ResumeFormToggler {
         input.style.margin = '0';
         input.removeAttribute('required');
         
-        // Use setTimeout to match transition duration
+        
         setTimeout(() => {
             input.style.display = 'none';
         }, 300);
@@ -97,7 +97,7 @@ class ResumeFormToggler {
     private handleFormSubmission(event: Event): void {
         event.preventDefault();
         
-        // Validate form before submission
+        
         if (!this.validateForm()) {
             return;
         }
@@ -110,7 +110,7 @@ class ResumeFormToggler {
         });
 
         try {
-            // You can add your form submission logic here
+            
             console.log('Form Submitted:', formValues);
             this.submitForm(formValues);
         } catch (error) {
@@ -137,19 +137,18 @@ class ResumeFormToggler {
     }
 
     private submitForm(formData: { [key: string]: string }): void {
-        // Implement actual form submission logic
-        // For example, using fetch or axios
+       os
         console.log('Submitting form data:', formData);
     }
 
     private handleSubmissionError(error: unknown): void {
-        // Handle submission errors
+
         const errorMessage = error instanceof Error ? error.message : String(error);
         alert(`Submission failed: ${errorMessage}`);
     }
 }
 
-// Initialize the form toggler when the DOM is fully loaded
+
 document.addEventListener('DOMContentLoaded', () => {
     try {
         const resumeFormToggler = new ResumeFormToggler();
