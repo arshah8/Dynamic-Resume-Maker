@@ -137,7 +137,7 @@ class ResumeFormToggler {
     }
 
     private submitForm(formData: { [key: string]: string }): void {
-       os
+       
         console.log('Submitting form data:', formData);
     }
 
